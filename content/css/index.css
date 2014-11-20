@@ -939,7 +939,7 @@ th {
 
 /* line 17, /Users/davsket/workspace/colombiajs.co/content/sass/shared/_general.sass */
 html, body {
-  background: #f2f2f2;
+  background: #f2f2f2 url('../img/background.jpg?1412745326');
 }
 
 /* line 20, /Users/davsket/workspace/colombiajs.co/content/sass/shared/_general.sass */
@@ -1569,4 +1569,112 @@ a {
   -webkit-border-radius: 3px;
   border-radius: 3px;
   margin-bottom: 0.4em;
+}
+
+/* line 1, /Users/davsket/workspace/colombiajs.co/content/sass/components/_block-social.sass */
+.social {
+  margin-top: 4em;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  display: flex;
+  position: relative;
+}
+/* line 8, /Users/davsket/workspace/colombiajs.co/content/sass/components/_block-social.sass */
+.social:before {
+  content: " ";
+  border-top: 1px solid white;
+  border-bottom: 1px solid #d0d0d0;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+/* line 18, /Users/davsket/workspace/colombiajs.co/content/sass/components/_block-social.sass */
+.social__subscribe,
+.social__twitter {
+  flex: 1;
+}
+
+/* line 22, /Users/davsket/workspace/colombiajs.co/content/sass/components/_block-social.sass */
+.social__title {
+  font-weight: 100;
+  font-size: 1.2em;
+  margin: 0 0 1em;
+}
+/* line 27, /Users/davsket/workspace/colombiajs.co/content/sass/components/_block-social.sass */
+.social__title:before {
+  font-family: icomoon;
+  font-size: 2.2em;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 0.6em;
+}
+/* line 34, /Users/davsket/workspace/colombiajs.co/content/sass/components/_block-social.sass */
+.social__subscribe .social__title:before, .social__twitter .social__title:before {
+  color: transparent;
+  text-shadow: 0.025em 0.025em 0.025em #dbdbdb, 0 0 0 #c2c2c2;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 43, /Users/davsket/workspace/colombiajs.co/content/sass/components/_block-social.sass */
+.social__subscribe .social__title:before {
+  content: "\e601";
+}
+/* line 46, /Users/davsket/workspace/colombiajs.co/content/sass/components/_block-social.sass */
+.social__twitter .social__title:before {
+  content: "\e600";
+}
+/* line 49, /Users/davsket/workspace/colombiajs.co/content/sass/components/_block-social.sass */
+.social__title > a {
+  font-weight: 500;
+  color: #5d5f50;
+}
+
+/* line 54, /Users/davsket/workspace/colombiajs.co/content/sass/components/_block-social.sass */
+.social__tweet {
+  margin-bottom: 1.6em;
+}
+
+/* line 57, /Users/davsket/workspace/colombiajs.co/content/sass/components/_block-social.sass */
+.social__tweet__message {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 1.1em 2.2em 1.4em;
+  font-size: 0.9em;
+  color: #86807b;
+  position: relative;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 65, /Users/davsket/workspace/colombiajs.co/content/sass/components/_block-social.sass */
+.social__tweet__message:before {
+  top: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  width: 35px;
+  height: 20px;
+  left: 55px;
+  content: " ";
+  position: absolute;
+  border-radius: 0 0 0 100%;
+}
+/* line 75, /Users/davsket/workspace/colombiajs.co/content/sass/components/_block-social.sass */
+.social__tweet__message:after {
+  top: 100%;
+  left: 80px;
+  width: 10px;
+  height: 20px;
+  background: #f2f2f2 url('../img/background.jpg?1412745326');
+  content: " ";
+  position: absolute;
+  border-radius: 0 0 0 100%;
+}
+
+/* line 86, /Users/davsket/workspace/colombiajs.co/content/sass/components/_block-social.sass */
+.social__tweet__footer {
+  font-size: 0.75em;
+  padding-left: 20%;
+  padding-top: 1em;
+  font-weight: 500;
 }
